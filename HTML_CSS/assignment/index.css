@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap');
+
+* {
+    font-family: 'Montserrat';
+}
+
+body,h1,h2 {
+    margin:0px;
+    padding:0px;
+}
+
+
+body {
+    min-width: fit-content;
+    background-color: #223142;
+}
+
+a {
+    text-decoration: none; color: black; }
+a:visited { 
+    text-decoration: none; 
+}
+a:hover { 
+    text-decoration: none; 
+}
+a:focus { 
+    text-decoration: none; 
+}
+a:hover, a:active { 
+    text-decoration: none; 
+}
+
+.main-box {
+    width: 800px;
+    padding: 30px;
+    margin: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ebebeb;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color: #ebebeb;
+}
+
+.navcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.report-title {
+    text-align: center;
+}
+
+.report-subject {
+    text-align: center;
+}
+h3 {
+    font-weight: bold;
+}
+
+.hobby-container {
+    display: grid;
+    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-areas: 
+        "cooking singing singing"
+        "movie movie game"
+        "coding fashion game";
+    grid-gap: 10px;
+}
+
+
+.cooking {
+    background-color: #FFD9C4;
+    grid-area: cooking;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+.singing {
+    background-color: #2FCFE0;
+    grid-area: singing;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    text-align: center;
+}
+.movie {
+    background-color: #D99A9A;
+    grid-area: movie;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+.game {
+    background-color: #BFA893;
+    grid-area: game;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    text-align: center;
+    padding: 60px;
+}
+.coding {
+    background-color: #025E73;
+    grid-area: coding;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+.fashion {
+    background-color: #f5f5dc;
+    grid-area: fashion;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+
+
+footer {
+    text-align:center;
+    background-color: #223142;
+    padding: 10px;
+    font-size: 12px;
+    color: #919191;
+}
